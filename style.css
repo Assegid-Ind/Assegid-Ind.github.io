@@ -1,0 +1,51 @@
+.firstTrial {
+   color: green;
+}
+
+.secondClass {
+    color: blue;
+}
+
+
+.FourthClass {
+    background-image: url("https://image.shutterstock.com/image-vector/blackboard-inscribed-scientific-formulas-calculations-600w-538136431.jpg");
+    height: 4in;
+    width: 14in;
+    text-align: center;
+    color: red;
+    font-size: .5in;
+    line-height: 2in;
+}
+
+.topnav {
+          overflow: hidden;
+          background-color: #333333;
+          text-align: center;
+}
+        
+.topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+.topnav a:hover {
+          background-color: yellow;
+          color: black;
+        }
+        
+.topnav a.active {
+          background-color: #4CAF50;
+          color: black;
+        }
+.header {
+    color: black;
+    text-align: center;
+    background-color: yellow;
+}
+.title {
+    background-color: yellow;
+}
