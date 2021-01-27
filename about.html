@@ -4,7 +4,7 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style3.css">
 </head>
 <body>
 
@@ -14,36 +14,45 @@
 </div>
 
 <div class="navbar">
-  <a href="index">home</a>
+  <a href="about">about</a>
   <a href="achievements">achievements/goals</a>
   <a href="projects">projects</a>
   <a href="otherstuff" class="right">other stuff</a>
 </div>
+</div>
+<div>  
+    <div class="realimg2" style="height:200px;"></div>
+    <button class="collapsible">Click to view ↓</button>
+<div class="content">
+  <p>
+    <p>
+      My name is Barock Assegid, I'am a 15 year old, attending Suncoast High School in Rivera Beach, FL.
+    </p>
+</div>
+  </div>
+</div>
 
-<form name="contact-form">
-  <div>
-  Your Name : </div>
-  <input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="30" type="text" value="" />  
-  <br />
-  <div>
-  Your Email: <i>(required)</i></div>
-  <input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="30" type="text" value="" />  
-  <br />
-  <div>
-  Your Message: <i>(required)</i></div>
-  <textarea class="contact-form-email-message" id="ContactForm1_contact-form-email-message" name="email-message" rows="5"></textarea>
-  
-  <br />
-  <br />
-  <input class="contact-form-button contact-form-button-submit" id="ContactForm1_contact-form-submit" type="button" value="Send" />
-  
-  <div style="max-width: 450px; text-align: center; width: 100%;">
-  <div class="contact-form-error-message" id="ContactForm1_contact-form-error-message">
-  </div>
-  <div class="contact-form-success-message" id="ContactForm1_contact-form-success-message">
-  </div>
-  </div>
-  </form>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+  </script>
+<!-- www.123formbuilder.com script begins here -->
+<iframe allowTransparency="true" style="min-height:300px; height:inherit; overflow:auto;" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="http://www.123formbuilder.com/form-5628560/my-form">
+  <p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p></iframe>
+<!-- www.123formbuilder.com script ends here -->
+
 
 
 
