@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Other Stuff</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+
+<div class="header">
+  <h1>Barock Assegid</h1>
+  <p>"Assegid Industries"</p>
+</div>
+
+<div class="navbar">
+  <a href="index">home</a>
+  <a href="about">about</a>
+  <a href="achievements">achievements/goals</a>
+  <a href="otherstuff" class="right">other stuff</a>
+</div>
+
+</div>  
+<div class="realimg2" style="height:200px;"></div>
+<button class="collapsible">Resources and cool links ↓</button>
+<div class="content">
+<p>BAROCK ASSEGID</p>
+</div>
+</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.maxHeight){
+  content.style.maxHeight = null;
+} else {
+  content.style.maxHeight = content.scrollHeight + "px";
+} 
+});
+}
+</script>
+
+<div class="footer">
+    <h2>Contacts; phone: 561-909-9052; Email: bassegid13@gmail.com (or on the about page!)
+    </h2>
+  </div>
+  
+  </body>
+  </html>
